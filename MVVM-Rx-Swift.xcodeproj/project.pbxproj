@@ -15,6 +15,10 @@
 		52B4F1DB2562EB790091ED40 /* StoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B4F1DA2562EB790091ED40 /* StoryView.swift */; };
 		52B4F1E02562EB880091ED40 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B4F1DF2562EB880091ED40 /* Coordinator.swift */; };
 		52B4F1E32562EBA10091ED40 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B4F1E22562EBA10091ED40 /* AppCoordinator.swift */; };
+		52B4F1E92562EF350091ED40 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B4F1E82562EF350091ED40 /* Router.swift */; };
+		52B4F1EC2562F0840091ED40 /* Showable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B4F1EB2562F0840091ED40 /* Showable.swift */; };
+		52B4F1EF2562F18C0091ED40 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B4F1EE2562F18C0091ED40 /* AppRouter.swift */; };
+		52B4F1F3256300970091ED40 /* NetWorkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B4F1F2256300970091ED40 /* NetWorkClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,10 @@
 		52B4F1DA2562EB790091ED40 /* StoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryView.swift; sourceTree = "<group>"; };
 		52B4F1DF2562EB880091ED40 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		52B4F1E22562EBA10091ED40 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		52B4F1E82562EF350091ED40 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		52B4F1EB2562F0840091ED40 /* Showable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Showable.swift; sourceTree = "<group>"; };
+		52B4F1EE2562F18C0091ED40 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		52B4F1F2256300970091ED40 /* NetWorkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetWorkClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +90,8 @@
 		52B4F1D12562EB420091ED40 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				52B4F1F12562FFEA0091ED40 /* Network */,
+				52B4F1E72562EF2E0091ED40 /* Router */,
 				52B4F1DE2562EB810091ED40 /* Coordinator */,
 			);
 			path = Shared;
@@ -127,6 +137,24 @@
 				52B4F1E22562EBA10091ED40 /* AppCoordinator.swift */,
 			);
 			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		52B4F1E72562EF2E0091ED40 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				52B4F1E82562EF350091ED40 /* Router.swift */,
+				52B4F1EB2562F0840091ED40 /* Showable.swift */,
+				52B4F1EE2562F18C0091ED40 /* AppRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		52B4F1F12562FFEA0091ED40 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				52B4F1F2256300970091ED40 /* NetWorkClient.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,10 +227,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				52B4F1DB2562EB790091ED40 /* StoryView.swift in Sources */,
+				52B4F1F3256300970091ED40 /* NetWorkClient.swift in Sources */,
 				52B4F1E02562EB880091ED40 /* Coordinator.swift in Sources */,
 				52B4F1BC2562EADF0091ED40 /* AppDelegate.swift in Sources */,
+				52B4F1E92562EF350091ED40 /* Router.swift in Sources */,
 				52B4F1D72562EB670091ED40 /* StoryCoordinator.swift in Sources */,
+				52B4F1EF2562F18C0091ED40 /* AppRouter.swift in Sources */,
 				52B4F1BE2562EADF0091ED40 /* SceneDelegate.swift in Sources */,
+				52B4F1EC2562F0840091ED40 /* Showable.swift in Sources */,
 				52B4F1E32562EBA10091ED40 /* AppCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

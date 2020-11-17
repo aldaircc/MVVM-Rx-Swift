@@ -9,10 +9,10 @@ import UIKit
 
 class StoryCoordinator: Coordinator {
     
-    let presenter: UINavigationController
+    let presenter: Router //UINavigationController
     var storyView: StoryView?
     
-    init(presenter: UINavigationController) {
+    init(presenter: Router) {
         self.presenter = presenter
     }
     
@@ -20,7 +20,7 @@ class StoryCoordinator: Coordinator {
         let storyView = StoryView()
         storyView.title = "Stories"
         storyView.view.backgroundColor = .white
-        self.presenter.pushViewController(storyView, animated: true)
+        self.presenter.push(storyView, animated: true, completion: nil) //pushViewController(storyView, animated: true)
         self.storyView = storyView
     }
 }

@@ -11,16 +11,18 @@ class AppCoordinator: Coordinator {
     
     let rootView: UINavigationController
     let window: UIWindow
+    let appRouter: AppRouter
     
     init(window: UIWindow) {
         self.window = window
         self.rootView = UINavigationController()
         self.rootView.navigationBar.prefersLargeTitles = true
+        self.appRouter = AppRouter(navigation: rootView)
     }
     
     func start() {
-        window.rootViewController = rootView
-        let storyCoordinator = StoryCoordinator(presenter: rootView)
+        window.rootViewController = appRouter.toPresentable()
+        let storyCoordinator = StoryCoordinator(presenter: appRouter)
         storyCoordinator.start()
         window.makeKeyAndVisible()
     }
