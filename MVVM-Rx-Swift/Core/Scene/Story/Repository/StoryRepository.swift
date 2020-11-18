@@ -10,6 +10,7 @@ import Foundation
 struct StoryRepository {
  
     let storyRemote = StoryRemoteDataSource()
+    let storyLocal = StoryLocalDataSource()
     
     func getStories() {
         storyRemote.getStories()

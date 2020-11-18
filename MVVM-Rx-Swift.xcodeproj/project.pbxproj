@@ -11,6 +11,11 @@
 		52024C0525649E460090F620 /* HighlightResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52024C0425649E460090F620 /* HighlightResult.swift */; };
 		52024C0A25649F760090F620 /* StoryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52024C0925649F760090F620 /* StoryRepository.swift */; };
 		52024C0E25649FB60090F620 /* StoryRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52024C0D25649FB60090F620 /* StoryRemoteDataSource.swift */; };
+		52024C112564CA2E0090F620 /* StoryLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52024C102564CA2E0090F620 /* StoryLocalDataSource.swift */; };
+		52024C182564CA9A0090F620 /* StoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52024C172564CA9A0090F620 /* StoryCell.swift */; };
+		52024C1D2564CCDE0090F620 /* StoryDB.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 52024C1B2564CCDE0090F620 /* StoryDB.xcdatamodeld */; };
+		52024C212564CE660090F620 /* StoryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52024C202564CE660090F620 /* StoryManager.swift */; };
+		52024C252564D05D0090F620 /* PesistentStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52024C242564D05D0090F620 /* PesistentStorage.swift */; };
 		5276F4B625634F1900B8DEAE /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 5276F4B525634F1900B8DEAE /* RxSwift */; };
 		5276F4B825634F1900B8DEAE /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 5276F4B725634F1900B8DEAE /* RxCocoa */; };
 		5276F4BC2563513100B8DEAE /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 5276F4BB2563513100B8DEAE /* SnapKit */; };
@@ -35,6 +40,11 @@
 		52024C0425649E460090F620 /* HighlightResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighlightResult.swift; sourceTree = "<group>"; };
 		52024C0925649F760090F620 /* StoryRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryRepository.swift; sourceTree = "<group>"; };
 		52024C0D25649FB60090F620 /* StoryRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryRemoteDataSource.swift; sourceTree = "<group>"; };
+		52024C102564CA2E0090F620 /* StoryLocalDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryLocalDataSource.swift; sourceTree = "<group>"; };
+		52024C172564CA9A0090F620 /* StoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryCell.swift; sourceTree = "<group>"; };
+		52024C1C2564CCDE0090F620 /* StoryDB.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StoryDB.xcdatamodel; sourceTree = "<group>"; };
+		52024C202564CE660090F620 /* StoryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryManager.swift; sourceTree = "<group>"; };
+		52024C242564D05D0090F620 /* PesistentStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PesistentStorage.swift; sourceTree = "<group>"; };
 		5276F4BF2563539200B8DEAE /* Story.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
 		5276F4C4256353A700B8DEAE /* StoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryViewModel.swift; sourceTree = "<group>"; };
 		52B4F1B82562EADF0091ED40 /* MVVM-Rx-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVVM-Rx-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -72,8 +82,25 @@
 			children = (
 				52024C0925649F760090F620 /* StoryRepository.swift */,
 				52024C0D25649FB60090F620 /* StoryRemoteDataSource.swift */,
+				52024C102564CA2E0090F620 /* StoryLocalDataSource.swift */,
 			);
 			path = Repository;
+			sourceTree = "<group>";
+		};
+		52024C1F2564CE450090F620 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				52024C202564CE660090F620 /* StoryManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		52024C232564D0500090F620 /* CoreDataSupport */ = {
+			isa = PBXGroup;
+			children = (
+				52024C242564D05D0090F620 /* PesistentStorage.swift */,
+			);
+			path = CoreDataSupport;
 			sourceTree = "<group>";
 		};
 		5276F4BE2563538300B8DEAE /* Model */ = {
@@ -120,6 +147,7 @@
 				52B4F1C42562EADF0091ED40 /* Assets.xcassets */,
 				52B4F1C62562EADF0091ED40 /* LaunchScreen.storyboard */,
 				52B4F1C92562EADF0091ED40 /* Info.plist */,
+				52024C1B2564CCDE0090F620 /* StoryDB.xcdatamodeld */,
 			);
 			path = "MVVM-Rx-Swift";
 			sourceTree = "<group>";
@@ -135,6 +163,8 @@
 		52B4F1D12562EB420091ED40 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				52024C232564D0500090F620 /* CoreDataSupport */,
+				52024C1F2564CE450090F620 /* Manager */,
 				52B4F1F12562FFEA0091ED40 /* Network */,
 				52B4F1E72562EF2E0091ED40 /* Router */,
 				52B4F1DE2562EB810091ED40 /* Coordinator */,
@@ -174,6 +204,7 @@
 			isa = PBXGroup;
 			children = (
 				52B4F1DA2562EB790091ED40 /* StoryView.swift */,
+				52024C172564CA9A0090F620 /* StoryCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -283,11 +314,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52024C252564D05D0090F620 /* PesistentStorage.swift in Sources */,
 				5276F4C5256353A700B8DEAE /* StoryViewModel.swift in Sources */,
 				52B4F1DB2562EB790091ED40 /* StoryView.swift in Sources */,
 				52B4F1F3256300970091ED40 /* NetWorkClient.swift in Sources */,
 				52B4F1E02562EB880091ED40 /* Coordinator.swift in Sources */,
 				52B4F1BC2562EADF0091ED40 /* AppDelegate.swift in Sources */,
+				52024C182564CA9A0090F620 /* StoryCell.swift in Sources */,
 				52B4F1E92562EF350091ED40 /* Router.swift in Sources */,
 				52B4F1D72562EB670091ED40 /* StoryCoordinator.swift in Sources */,
 				52B4F1EF2562F18C0091ED40 /* AppRouter.swift in Sources */,
@@ -295,10 +328,13 @@
 				52B4F1BE2562EADF0091ED40 /* SceneDelegate.swift in Sources */,
 				52B4F1EC2562F0840091ED40 /* Showable.swift in Sources */,
 				52B4F1E32562EBA10091ED40 /* AppCoordinator.swift in Sources */,
+				52024C212564CE660090F620 /* StoryManager.swift in Sources */,
 				5276F4C02563539200B8DEAE /* Story.swift in Sources */,
 				52024C0525649E460090F620 /* HighlightResult.swift in Sources */,
 				52024C0E25649FB60090F620 /* StoryRemoteDataSource.swift in Sources */,
+				52024C1D2564CCDE0090F620 /* StoryDB.xcdatamodeld in Sources */,
 				52024C0225649DEB0090F620 /* Tag.swift in Sources */,
+				52024C112564CA2E0090F620 /* StoryLocalDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -527,6 +563,19 @@
 			productName = SnapKit;
 		};
 /* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		52024C1B2564CCDE0090F620 /* StoryDB.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				52024C1C2564CCDE0090F620 /* StoryDB.xcdatamodel */,
+			);
+			currentVersion = 52024C1C2564CCDE0090F620 /* StoryDB.xcdatamodel */;
+			path = StoryDB.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 52B4F1B02562EADF0091ED40 /* Project object */;
 }

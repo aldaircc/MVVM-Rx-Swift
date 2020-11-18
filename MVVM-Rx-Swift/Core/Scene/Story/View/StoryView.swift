@@ -45,7 +45,7 @@ class StoryView: UIViewController {
     }
     
     func configureTableView() {
-        self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
+        self.tableView.register(StoryCell.self, forCellReuseIdentifier: "Cell")
     }
 
     /*
