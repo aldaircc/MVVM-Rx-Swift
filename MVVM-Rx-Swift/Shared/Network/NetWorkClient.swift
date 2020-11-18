@@ -47,6 +47,8 @@ extension NetWorkClient {
             if let data = data {
                 do {
                     let jsonObject = try JSONSerialization.jsonObject(with: data, options: [])
+                    print("Json")
+                    print(jsonObject)
                     let decoder = JSONDecoder()
                     let objectDecoded = try decoder.decode(objectType.self, from: data)
                     completion(.success(objectDecoded))
@@ -54,6 +56,6 @@ extension NetWorkClient {
                     completion(.failure(error))
                 }
             }
-        }
+        }.resume()
     }
 }
