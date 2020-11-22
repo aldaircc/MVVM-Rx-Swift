@@ -5,13 +5,13 @@
 //  Created by Aldair Raul Cosetito Coral on 11/16/20.
 //
 
-import Foundation
+import RxSwift
 
 class StoryViewModel {
     
     private let repository = StoryRepository()
     
-    func getStories() {
-        self.repository.getStories()
+    func getStories() -> Observable<(stories: [Story], status: Bool)> {
+        return self.repository.getStories()
     }
 }

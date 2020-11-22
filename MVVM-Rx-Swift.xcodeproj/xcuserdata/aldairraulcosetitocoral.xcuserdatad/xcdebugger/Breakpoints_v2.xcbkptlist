@@ -39,22 +39,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "9D9468A9-A5AC-45E4-BA58-CC2F4272C829"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MVVM-Rx-Swift/Core/Scene/Story/View/StoryView.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "409C47E8-7CB4-4A60-8B87-C18948FECF1A"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
@@ -82,6 +66,118 @@
             endingLineNumber = "26"
             landmarkName = "init(style:reuseIdentifier:)"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CE651DC1-078A-4C21-9BC9-AEA26F7126C5"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MVVM-Rx-Swift/Core/Scene/Story/View/StoryView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "CE651DC1-078A-4C21-9BC9-AEA26F7126C5 - 6f9eaa753cd35f14"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MVVM_Rx_Swift.StoryView.viewDidLoad() -&gt; ()"
+                  moduleName = "MVVM-Rx-Swift"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aldairraulcosetitocoral/Documents/IOS-Proyectos/Xcode12/MVVM-Rx-Swift/MVVM-Rx-Swift/Core/Scene/Story/View/StoryView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "443">
+               </Location>
+               <Location
+                  uuid = "CE651DC1-078A-4C21-9BC9-AEA26F7126C5 - 886392addee8f25b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Array&lt;MVVM_Rx_Swift.Story&gt;, Swift.Bool) -&gt; () in MVVM_Rx_Swift.StoryView.viewDidLoad() -&gt; ()"
+                  moduleName = "MVVM-Rx-Swift"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aldairraulcosetitocoral/Documents/IOS-Proyectos/Xcode12/MVVM-Rx-Swift/MVVM-Rx-Swift/Core/Scene/Story/View/StoryView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "44">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "08DAEB10-7D4F-42BB-8AC0-7536819DDAE0"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MVVM-Rx-Swift/Core/Scene/Story/View/StoryView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2DF865DF-004B-4090-87B7-199AF6AA4D86"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MVVM-Rx-Swift/Core/Scene/Story/Repository/StoryRemoteDataSource.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "getStories()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "2DF865DF-004B-4090-87B7-199AF6AA4D86 - d10c6ccf8eb08330"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (MVVM_Rx_Swift.ResponseNetWork&lt;MVVM_Rx_Swift.Stories&gt;) -&gt; () in closure #1 (RxSwift.AnyObserver&lt;(stories: Swift.Array&lt;MVVM_Rx_Swift.Story&gt;, status: Swift.Bool)&gt;) -&gt; RxSwift.Disposable in MVVM_Rx_Swift.StoryRemoteDataSource.getStories() -&gt; RxSwift.Observable&lt;(stories: Swift.Array&lt;MVVM_Rx_Swift.Story&gt;, status: Swift.Bool)&gt;"
+                  moduleName = "MVVM-Rx-Swift"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aldairraulcosetitocoral/Documents/IOS-Proyectos/Xcode12/MVVM-Rx-Swift/MVVM-Rx-Swift/Core/Scene/Story/Repository/StoryRemoteDataSource.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "288">
+               </Location>
+               <Location
+                  uuid = "2DF865DF-004B-4090-87B7-199AF6AA4D86 - d10c6ccf8eb08330"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (MVVM_Rx_Swift.ResponseNetWork&lt;MVVM_Rx_Swift.Stories&gt;) -&gt; () in closure #1 (RxSwift.AnyObserver&lt;(stories: Swift.Array&lt;MVVM_Rx_Swift.Story&gt;, status: Swift.Bool)&gt;) -&gt; RxSwift.Disposable in MVVM_Rx_Swift.StoryRemoteDataSource.getStories() -&gt; RxSwift.Observable&lt;(stories: Swift.Array&lt;MVVM_Rx_Swift.Story&gt;, status: Swift.Bool)&gt;"
+                  moduleName = "MVVM-Rx-Swift"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aldairraulcosetitocoral/Documents/IOS-Proyectos/Xcode12/MVVM-Rx-Swift/MVVM-Rx-Swift/Core/Scene/Story/Repository/StoryRemoteDataSource.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "316">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

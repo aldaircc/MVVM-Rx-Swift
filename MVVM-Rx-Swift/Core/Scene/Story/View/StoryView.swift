@@ -13,6 +13,7 @@ class StoryView: UIViewController {
 
     //MARK: - Local Properties
     let viewModel = StoryViewModel()
+    let disposeBag = DisposeBag()
 
     //MARK: - UI Properties
     let tableView: UITableView = {
@@ -26,7 +27,14 @@ class StoryView: UIViewController {
         
         // Do any additional setup after loading the view.
         self.view.backgroundColor = .white
-        self.viewModel.getStories()
+        
+        self.viewModel.getStories().subscribe(onNext: { (stories, status) in
+            print("Stories")
+            print(stories.count)
+            print("Status: \(status)")
+        })
+        .disposed(by: self.disposeBag)
+        
         configureTableView()
         setupUI()
         setupAction()
